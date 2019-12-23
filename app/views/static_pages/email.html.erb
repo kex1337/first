@@ -1,0 +1,7 @@
+h1>Users</h1>
+
+ <% @users.each do |user| %> 
+	<%= user.name %>
+	<a href="/static_pages/email?id=<%=user.id%>"> User link </a>
+	<% end %>
+	
